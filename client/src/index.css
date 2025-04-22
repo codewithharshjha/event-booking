@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  @apply bg-gray-50;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.main-container {
+  @apply container mx-auto px-4 py-8 max-w-7xl;
+}
+
+.page-title {
+  @apply text-3xl font-bold text-gray-800 mb-8;
+}
+
+.btn {
+  @apply px-4 py-2 rounded-md font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2;
+}
+
+.btn-primary {
+  @apply btn bg-primary-600 text-white hover:bg-primary-700 focus:ring-primary-500;
+}
+
+.btn-accent {
+  @apply btn bg-accent-500 text-white hover:bg-accent-600 focus:ring-accent-400;
+}
+
+.btn-outline {
+  @apply btn border border-gray-300 text-gray-700 hover:bg-gray-50 focus:ring-primary-500;
+}
+
+.btn-danger {
+  @apply btn bg-error-600 text-white hover:bg-error-700 focus:ring-error-500;
+}
+
+.input-field {
+  @apply block w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring-primary-500 sm:text-sm border p-2;
+}
+
+.form-label {
+  @apply block text-sm font-medium text-gray-700 mb-1;
+}
+
+.card {
+  @apply bg-white rounded-lg shadow-md overflow-hidden transition-all hover:shadow-lg;
+}
+
+.event-card {
+  @apply card cursor-pointer;
+}
+
+.seat-available {
+  @apply bg-success-100 text-success-800 border border-success-200 hover:bg-success-200 cursor-pointer;
+}
+
+.seat-selected {
+  @apply bg-primary-500 text-white border border-primary-600 hover:bg-primary-600 cursor-pointer;
+}
+
+.seat-booked {
+  @apply bg-gray-200 text-gray-500 border border-gray-300 cursor-not-allowed;
+}
